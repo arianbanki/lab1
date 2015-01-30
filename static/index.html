@@ -1,25 +1,58 @@
+<<<<<<< HEAD
 <!doctype html>
-
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>HCI Project Portfolio</title>
+<head> <link rel="stylesheet" type"text/css" href="team4.css">
 </head>
+<body> 
+	<img src="README.jpg" alt="aLot" style="width:304px;height:128px">
+	<div> <h2> what would you like to do?
+	</h2>
+</div>
 
-<body>
-	<!-- this is a comment in HTML -->
-	<h1>Michael Banki</h1> <!-- h1 through h5 are headers. The higher the number, the smaller the header -->
-	<h4>Project Portfolio</h4>
+<div> 
+	<div class="buttons"> 
+		<div> <a href="food.html"><div><h3 class="food">FOOD</h3></div></a>
+		<a href="fun.html"><div><h3 class="fun">FUN</h3></div></a>
+	</div>
+</div>
+<div class="slider">
+	<h4>Freetime / minutes: </h4>
+	<input type=range min=0 max=90 value=15 class=vertical orient=vertical id=fader step=1 onchange="outputUpdate(value)">
+	<output for=fader id=volume>10</output>
+	<script>
+		function outputUpdate(vol) {
+		document.querySelector('#volume').value = vol;
+	}
 
-	<!-- p means paragraph -->
-	<p>I= Michael is a cog sci major at UCSD. He is very excited about this class and the project. </p>
+</script>
 
-	<h4>Projects</h4>
-	<ol>
-		<li>Design Thinking</li>
-		<li>Needfinding</li>
-		<li>Prototyping</li>
-		<li>...</li>
-	</ol>
+</div>
+=======
+<!doctype html>
+<head> <link rel="stylesheet" type"text/css" href="team4.css">
+</head>
+<body> 
+	<img src="README.jpg" alt="aLot" style="width:304px;height:128px">
+	<div> <h2> what would you like to do?
+	</h2>
+</div>
+
+<div> 
+	<div class="buttons"> 
+		<div> <a href="food.html"><div><h3 class="food">FOOD</h3></div></a>
+		<a href="fun.html"><div><h3 class="fun">FUN</h3></div></a>
+	</div>
+</div>
+<div class="slider">
+	<h4>Freetime: </h4>
+	<input type=range min=0 max=90 value=15 class=vertical orient=vertical id=fader step=1 onchange="outputUpdate(value)">
+	<output for=fader id=volume>10</output>
+	<script>
+		function outputUpdate(vol) {
+		document.querySelector('#volume').value = vol;
+	}
+
+</script>
+
+</div>
+>>>>>>> cb803f650d1f2fc858b743d786fa898bc26dbb5d
 </body>
-</html>
